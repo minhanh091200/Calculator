@@ -64,6 +64,7 @@ compute.addEventListener("click", function () {
 const deleted = document.querySelector(".delete");
 deleted.addEventListener("click", function () {
     let lastEntryRemoved = charString.slice(0, -1);
+    number = "".concat(lastEntryRemoved);
     charString = "".concat(lastEntryRemoved);
     entries.innerText = charString;
 });
@@ -71,6 +72,7 @@ deleted.addEventListener("click", function () {
 //reset input string and result
 const clear = document.querySelector(".clear");
 clear.addEventListener("click", function () {
+    number = "";
     charString = "";
     entries.innerText = charString;
     computed = 0;
